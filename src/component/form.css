@@ -1,0 +1,19 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+p {
+  color: #bf1650;
+  fwight: bold;
+}
+p::before {
+  content: "⚠️ ";
+  display: inline;
+}
