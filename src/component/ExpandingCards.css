@@ -1,21 +1,21 @@
-@charset "UTF-8";
+
 * {
   box-sizing: border-box;
 }
 
-
-/*裝卡片的容器*/ /*會隨著視窗調整寬度*/
 .container {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  width: 80vh;
 }
 
 .card {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 40vh;
+  
   border-radius: 50px;
   cursor: pointer;
   color: #ffffff;

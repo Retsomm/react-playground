@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 60vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  background: url("https://www.ghibli.jp/gallery/laputa036.jpg") no-repeat 50% 50% / cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(60vw + 60px);
+  height: calc(60vh + 60px);
+  z-index: -1;
+}
+
+.loading-text {
+  font-size: 50px;
+  color: white;
+  z-index: 1;
+}
