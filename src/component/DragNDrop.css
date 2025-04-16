@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+  }
+  .squares-container {
+    display: flex;
+    justify-content: center;
+  }
+  .square {
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: 3px solid black;
+  }
+  
+  .fill {
+    background: url("https://m.media-amazon.com/images/I/81tUJSyT-pL._AC_SX466_.jpg") no-repeat center/cover black;
+    cursor: pointer;
+    width: 145px;
+    height: 145px;
+  }
+  
+  .hold {
+    border: 3px dashed black;
+  }
+  
+  .invisible {
+    display: none;
+  }
+  
+  .hover {
+    background-color: gray;
+    border: 3px dashed white;
+  }
+  

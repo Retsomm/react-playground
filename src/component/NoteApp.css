@@ -1,0 +1,68 @@
+.note-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.add {
+  background-color: #9ec862;
+  color: #fff;
+  border: none; /*或0**/
+  border-radius: 3px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.add:active {
+  transform: scale(0.97);
+}
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+/* 便條主體 */
+.note {
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  height: 300px;
+  width: 300px;
+  color: black;
+}
+/* 編輯工具 */
+.note .tools {
+  background-color: #9ec862;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+/* 編輯和刪除按鈕 */
+.note .tools button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 8px;
+}
+/* 文字輸入 */
+.note textarea {
+  outline: none;
+  font-size: 20px;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+/* 以下要透過JS才有效果 */
+.main {
+  font-size: 25px;
+  padding: 15px;
+}
+.hidden {
+  display: none;
+}
