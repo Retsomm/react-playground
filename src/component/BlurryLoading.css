@@ -18,10 +18,12 @@ html,
   width: 60vw;
   position: relative;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .bg {
-  background: url("https://www.ghibli.jp/gallery/laputa036.jpg") no-repeat 50% 50% / cover;
+  background: url("https://www.ghibli.jp/gallery/laputa036.jpg") no-repeat 50%
+    50% / cover;
   position: absolute;
   top: -30px;
   left: -30px;

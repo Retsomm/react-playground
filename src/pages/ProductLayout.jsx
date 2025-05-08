@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 const ProductLayout = () => {
   return (
-    <>
+    <div className="m-15">
       <nav>
         <span>
           <Link to="/products/1">Product 1</Link>
@@ -20,7 +20,7 @@ const ProductLayout = () => {
         </span>
       </nav>
       <Outlet />
-    </>
+    </div>
   );
 };
 

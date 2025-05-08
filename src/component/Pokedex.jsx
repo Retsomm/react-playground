@@ -38,9 +38,9 @@ function Pokedex() {
   }, []);
 
   return (
-    <div className="pokemonsApp">
+    <div className="pokemonsApp scroll-auto">
       <h1>Pokedex</h1>
-      <div className="pokemons-container">
+      <div className="pokemons-container h-90 overflow-auto">
         {pokemons.map((pokemon) => (
           <PokemonCard key={pokemon.id} pokemon={pokemon} />
         ))}

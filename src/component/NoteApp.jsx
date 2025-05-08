@@ -39,17 +39,16 @@ const NoteApp = () => {
       <button className="add" onClick={addNote}>
         <FontAwesomeIcon icon={faPlus} /> Add note
       </button>
-    <div className="notes">
-    {notes.map((note, index) => (
-        <Note
-          key={index}
-          text={note}
-          onChange={(newText) => updateNote(index, newText)}
-          onDelete={() => deleteNote(index)}
-        />
-      ))}
-    </div>
-      
+      <div className="notes">
+        {notes.map((note, index) => (
+          <Note
+            key={index}
+            text={note}
+            onChange={(newText) => updateNote(index, newText)}
+            onDelete={() => deleteNote(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
@@ -74,7 +73,10 @@ const Note = ({ text, onChange, onDelete }) => {
           onChange={(e) => onChange(e.target.value)}
         ></textarea>
       ) : (
-        <div className="main" dangerouslySetInnerHTML={{ __html: marked.parse(text) }} />
+        <div
+          className="main"
+          dangerouslySetInnerHTML={{ __html: marked.parse(text) }}
+        />
       )}
     </div>
   );

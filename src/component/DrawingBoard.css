@@ -3,7 +3,8 @@
   
   /* 包裹整個畫布與工具列 */
   .wrapper {
-    height: 100vh;
+    margin:100px;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

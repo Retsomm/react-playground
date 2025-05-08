@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 const Header = () => {
   return (
-    <nav className="flex h-15 justify-evenly items-center bg-gray-800 text-white px-4">
+    <nav className="fixed z-50 w-full flex h-15 justify-evenly items-center bg-gray-800 text-white px-4">
       <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/">
         首頁
       </NavLink>

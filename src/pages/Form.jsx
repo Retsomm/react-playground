@@ -7,7 +7,7 @@ const Form = () => {
 
   return (
     <>
-      <div className="flex m-5 items-center justify-center">
+      <div className="m-15 flex items-center justify-center">
         <button className="m-5" onClick={() => setShowForm("react-hook-form")}>
           ReactFormHook
         </button>
